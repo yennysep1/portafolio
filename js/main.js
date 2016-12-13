@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(){
 
 // FUNCION MENU HAMBURGESA
@@ -29,7 +30,7 @@ $(".hamburger").click(function() {
 
 $(function(){
 
-     $('a[href*=#]').click(function() {
+     $('#home ul li a').click(function() {
 
      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
          && location.hostname == this.hostname) {
@@ -42,7 +43,7 @@ $(function(){
 
                  var targetOffset = $target.offset().top;
 
-                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+                 $('html,body').animate({scrollTop: targetOffset}, 3000);
 
                  return false;
             }
