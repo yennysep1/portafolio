@@ -1,0 +1,62 @@
+@mixin titulo{
+	font-family: $fontPrincipal;
+	font-weight: 100;
+	font-size: 4rem;
+	color: $colorDark;
+	margin-top: 100px;
+}
+
+@mixin spanTitulo{
+	font-family: $fontSpan;
+	color: $colorPrincipal;
+	font-size: $sizeSpan;
+}
+
+@mixin titulostres{
+	font-family: $fontPrincipal;
+	font-weight: 100;
+}
+
+@mixin tituloscuatro{
+	font-family: $fontCuatro;
+}
+
+@mixin parrafos{
+	font-family: $fontPrincipal;
+    font-weight: 100;
+    font-size: $sizeParr;
+    text-align: justify;
+    color: $colorParr;
+}
+
+@mixin bg{
+	background-repeat: no-repeat;
+	background-size:cover;
+	width: 100%;
+	height: $heightSect;
+}
+
+@mixin animated($t,$l,$fs){
+	position: relative;
+    top: $t;  
+    left: $l;
+    width: 24em;
+    background-color: rgba(51,51,51,.90);
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: $fs;
+    color: $colorPrincipal;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+}
+
+@mixin icons{
+	font-size: 2em;
+ 	border: 1px solid $colorLight;
+ 	color: $colorDark;
+ 	border-radius: 50%;
+ 	padding: 13px;
+}
+

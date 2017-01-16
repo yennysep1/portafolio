@@ -1,0 +1,13 @@
+
+@media screen and (max-width: 768px) {
+	.line-1{
+    	@include animated(150px,-5px,125%);   
+	}
+
+	
+
+	footer{
+		margin-top: 1200px;
+	}
+
+}

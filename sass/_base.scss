@@ -1,0 +1,146 @@
+/*ESTYLES GENERALS*/
+
+h1{
+	@include titulo;
+	span{
+	@include spanTitulo;
+	}
+}
+
+h3{
+	@include titulostres;
+}
+
+h4{
+	@include tituloscuatro;
+}
+
+p{
+	@include parrafos;
+}
+
+section,{
+	height: $heightSect;
+}
+
+.content{
+	margin-top: $marginContent;
+	margin-bottom: $marginContent; 
+	// not about
+}
+
+//ESTYLES OF HEADER
+
+header{
+	background-image: url('../img/bg2.jpg');
+	@include bg;
+	a:hover{
+		border-bottom: $borderPrinc;
+	}
+	li.active{
+		border-bottom: $borderPrinc;
+	}
+}
+
+//animated typewrite
+
+.line-1{
+   @include animated(290px,100px,180%);   
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(27) 1s 1 normal both,
+             blinkTextCursor 500ms steps(27) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 13em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+//ESTYLES OF SKILL
+
+#skill i{
+ 	@include icons;
+ 	&:hover{
+		color: #fff;
+		background-color: $colorPrincipal;
+		border: transparent;
+	}
+}
+
+.icons{
+	margin: 10px 0px;
+	cursor: pointer;
+}
+ 
+
+//STYLES OF ABOUT ME
+
+#about-me {
+	.m-left{
+		background-color: $colorLight;
+		color: #fff;
+	}
+	.m-right{
+		background-color: $colorPrincipal;
+	}
+	a{
+	    color: #fff;	    
+	}
+	.perfil{
+		border-radius:100%;
+		width:329px;
+		height:329px;
+	}
+}
+
+/*ESTILOS PROJECT*/
+
+#projects{
+	height: 150vh;	
+	a{
+		color: $colorPrincipal;
+	}
+
+}
+
+/*ESTILOS DEL FOOTER*/
+
+footer{
+	margin-top: 50px;
+	background-color: $colorLight;
+	.social{
+		margin-top: 50px;
+	}
+	i{
+		@include icons;
+		&:hover{
+			color: $colorPrincipal;
+		}
+	}
+
+	.laboratoria{
+		margin-top: 36px;
+		a{
+			color: $colorDark;
+			font-weight: bold;
+		}
+	}
+
+}
+
+#up{
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	top: 90%;
+	right: 3%;
+	color: #2d282d;
+	font-size: 2em;
+	z-index: 99;
+}
