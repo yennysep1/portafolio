@@ -42,6 +42,8 @@ $(document).ready(function(){
 
 // up scroll
 
+$(document).ready(function(){
+
 	$('#up').click(function(){
 		$('body,html').animate({
 			scrollTop: '0px'
@@ -56,10 +58,4 @@ $(document).ready(function(){
 			$('#up').slideUp(100);
 		}
 	});
-
-
-
-
-
-
-
+});
