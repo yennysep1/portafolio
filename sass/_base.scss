@@ -1,7 +1,7 @@
 /*ESTYLES GENERALS*/
 
 h1{
-	@include titulo;
+	@include titulo(50px);
 	span{
 	@include spanTitulo;
 	}
@@ -40,12 +40,23 @@ header{
 	li.active{
 		border-bottom: $borderPrinc;
 	}
+	nav{
+		background-color: transparent;
+		box-shadow: none;
+		line-height: 32px;
+	}
+	ul{
+		background-color: rgba(51,51,51,.2);
+		position: fixed;
+		top:0px;
+		left: 420px;
+	}
 }
 
 //animated typewrite
 
 .line-1{
-   @include animated(290px,100px,180%);   
+   @include animated(290px,-39px,180%);   
 }
 
 /* Animation */
@@ -78,10 +89,12 @@ header{
 	cursor: pointer;
 }
  
-
 //STYLES OF ABOUT ME
 
 #about-me {
+	h1{
+		@include titulo(0px);
+	}
 	.m-left{
 		background-color: $colorLight;
 		color: #fff;
@@ -102,6 +115,9 @@ header{
 /*ESTILOS PROJECT*/
 
 #projects{
+	h1{
+		@include titulo(50px);
+	}
 	height: 150vh;	
 	a{
 		color: $colorPrincipal;
@@ -110,6 +126,7 @@ header{
 }
 
 /*ESTILOS DEL FOOTER*/
+
 
 footer{
 	margin-top: 50px;

@@ -6360,7 +6360,7 @@ h1 {
   font-weight: 100;
   font-size: 4rem;
   color: #352b36;
-  margin-top: 100px; }
+  padding-top: 50px; }
   h1 span {
     font-family: "Anton", sans-serif;
     color: #ecfe29;
@@ -6397,11 +6397,20 @@ header {
     border-bottom: 4px solid #ecfe29; }
   header li.active {
     border-bottom: 4px solid #ecfe29; }
+  header nav {
+    background-color: transparent;
+    box-shadow: none;
+    line-height: 32px; }
+  header ul {
+    background-color: rgba(51, 51, 51, 0.2);
+    position: fixed;
+    top: 0px;
+    left: 420px; }
 
 .line-1 {
   position: relative;
   top: 290px;
-  left: 100px;
+  left: -39px;
   width: 24em;
   background-color: rgba(51, 51, 51, 0.9);
   margin: 0 auto;
@@ -6442,6 +6451,12 @@ header {
   margin: 10px 0px;
   cursor: pointer; }
 
+#about-me h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 4rem;
+  color: #352b36;
+  padding-top: 0px; }
 #about-me .m-left {
   background-color: #e4e4e4;
   color: #fff; }
@@ -6457,6 +6472,12 @@ header {
 /*ESTILOS PROJECT*/
 #projects {
   height: 150vh; }
+  #projects h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+    color: #352b36;
+    padding-top: 50px; }
   #projects a {
     color: #ecfe29; }
 
@@ -6504,9 +6525,6 @@ footer {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%); }
-
-  footer {
-    margin-top: 1200px; } }
+    transform: translateY(-50%); } }
 
 /*# sourceMappingURL=main.css.map */

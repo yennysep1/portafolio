@@ -1,9 +1,9 @@
-@mixin titulo{
+@mixin titulo($pd){
 	font-family: $fontPrincipal;
 	font-weight: 100;
 	font-size: 4rem;
 	color: $colorDark;
-	margin-top: 100px;
+	padding-top: $pd;
 }
 
 @mixin spanTitulo{
